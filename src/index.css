@@ -26,13 +26,17 @@ code {
   margin-bottom: 16px;
 }
 
+.btns {
+  display: flex;
+  gap: 4px;
+}
+
 .btn {
   cursor: pointer;
   padding: 4px 8px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .btns {
