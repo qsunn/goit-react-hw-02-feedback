@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className="btns">
-      {options.map(item => {
+      {options.map(option => {
         return (
-          <button className="btn" key={item} onClick={onLeaveFeedback}>
-            {item}
+          <button
+            className="btn"
+            key={option}
+            onClick={onLeaveFeedback.bind(this, option)}
+          >
+            {option[0].toUpperCase() + option.slice(1)}
           </button>
         );
       })}
